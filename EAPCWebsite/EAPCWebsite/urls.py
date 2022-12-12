@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# this include statement is for referencing other URL confs
+# the admin functions are set at default
 urlpatterns = [
     path('Eapc/', include('Eapc.urls')),
     path('admin/', admin.site.urls),
